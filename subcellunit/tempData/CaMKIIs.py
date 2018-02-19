@@ -33,7 +33,7 @@ import numpy
 # The vector field.
 #
 
-def vectorfield(y_,t_,p_):
+def vectorfield(y_,t,p_):
     """
     The vector field function for the vector field "CaMKIIs"
     Arguments:
@@ -59,7 +59,7 @@ def vectorfield(y_,t_,p_):
                   y_[18] is pCaMKII_Ca1
                   y_[19] is pCaMKII_Ca0
                   y_[20] is PP1__pCaMKIIaut
-        t_ :  time
+        t :  time
         p_ :  vector of the parameters
                   p_[0] is kf__CaM__Ca
                   p_[1] is kf__CaM_Ca1__Ca
@@ -323,7 +323,7 @@ def vectorfield(y_,t_,p_):
 #  The Jacobian.
 #
 
-def jacobian(y_, t_, p_):
+def jacobian(y_, t, p_):
     """
     The Jacobian of the vector field "CaMKIIs"
     Arguments:
@@ -349,7 +349,7 @@ def jacobian(y_, t_, p_):
                   y_[18] is pCaMKII_Ca1
                   y_[19] is pCaMKII_Ca0
                   y_[20] is PP1__pCaMKIIaut
-        t_ :  time
+        t :  time
         p_ :  vector of the parameters
                   p_[0] is kf__CaM__Ca
                   p_[1] is kf__CaM_Ca1__Ca
@@ -764,7 +764,7 @@ def jacobian(y_, t_, p_):
 # User function: MolCaPerMolCaM
 #
 
-def MolCaPerMolCaM(y_, t_, p_):
+def MolCaPerMolCaM(y_, t, p_):
     """
     The user-defined function "MolCaPerMolCaM" for the vector field "CaMKIIs"
     Arguments:
@@ -790,7 +790,7 @@ def MolCaPerMolCaM(y_, t_, p_):
                   y_[18] is pCaMKII_Ca1
                   y_[19] is pCaMKII_Ca0
                   y_[20] is PP1__pCaMKIIaut
-        t_ :  time
+        t :  time
         p_ :  vector of the parameters
                   p_[0] is kf__CaM__Ca
                   p_[1] is kf__CaM_Ca1__Ca
@@ -1031,7 +1031,7 @@ def MolCaPerMolCaM(y_, t_, p_):
 # User function: AutoCamkiiPercentage
 #
 
-def AutoCamkiiPercentage(y_, t_, p_):
+def AutoCamkiiPercentage(y_, t, p_):
     """
     The user-defined function "AutoCamkiiPercentage" for the vector field "CaMKIIs"
     Arguments:
@@ -1057,7 +1057,7 @@ def AutoCamkiiPercentage(y_, t_, p_):
                   y_[18] is pCaMKII_Ca1
                   y_[19] is pCaMKII_Ca0
                   y_[20] is PP1__pCaMKIIaut
-        t_ :  time
+        t :  time
         p_ :  vector of the parameters
                   p_[0] is kf__CaM__Ca
                   p_[1] is kf__CaM_Ca1__Ca
@@ -1298,7 +1298,7 @@ def AutoCamkiiPercentage(y_, t_, p_):
 # User function: MolCaMPerMolPP2B
 #
 
-def MolCaMPerMolPP2B(y_, t_, p_):
+def MolCaMPerMolPP2B(y_, t, p_):
     """
     The user-defined function "MolCaMPerMolPP2B" for the vector field "CaMKIIs"
     Arguments:
@@ -1324,7 +1324,7 @@ def MolCaMPerMolPP2B(y_, t_, p_):
                   y_[18] is pCaMKII_Ca1
                   y_[19] is pCaMKII_Ca0
                   y_[20] is PP1__pCaMKIIaut
-        t_ :  time
+        t :  time
         p_ :  vector of the parameters
                   p_[0] is kf__CaM__Ca
                   p_[1] is kf__CaM_Ca1__Ca
@@ -1565,7 +1565,7 @@ def MolCaMPerMolPP2B(y_, t_, p_):
 # User function: ActivePP2BPercentage
 #
 
-def ActivePP2BPercentage(y_, t_, p_):
+def ActivePP2BPercentage(y_, t, p_):
     """
     The user-defined function "ActivePP2BPercentage" for the vector field "CaMKIIs"
     Arguments:
@@ -1591,7 +1591,7 @@ def ActivePP2BPercentage(y_, t_, p_):
                   y_[18] is pCaMKII_Ca1
                   y_[19] is pCaMKII_Ca0
                   y_[20] is PP1__pCaMKIIaut
-        t_ :  time
+        t :  time
         p_ :  vector of the parameters
                   p_[0] is kf__CaM__Ca
                   p_[1] is kf__CaM_Ca1__Ca
